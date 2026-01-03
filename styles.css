@@ -4,6 +4,13 @@ body {
   font-family: Arial;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   font-size: 30px;
   font-weight: bold;

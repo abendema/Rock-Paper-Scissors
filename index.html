@@ -7,35 +7,42 @@
 </head>
 
 <body>
-  <p class="title">Rock Paper Scissors</p>
 
-  <!---------------------- Rock button ---------------------->
-  <button onclick="
+  <div class="container">
+    <p class="title">Rock Paper Scissors</p>
+
+    <div class="icon-buttons">
+      <!---------- Rock button ---------->
+      <button onclick="
       playGame('rock');
     " class="move-button">
-    <img src="./assets/rock.png" class="move-icon">
-  </button>
+        <img src="./assets/rock.png" class="move-icon">
+      </button>
 
-  <!---------------------- Paper button ---------------------->
-  <button onclick="
+      <!---------- Paper button ---------->
+      <button onclick="
       playGame('paper');
     " class="move-button">
-    <img src="./assets/paper.png" class="move-icon">
-  </button>
+        <img src="./assets/paper.png" class="move-icon">
+      </button>
 
-  <!---------------------- Scissors button ---------------------->
-  <button onclick="
+      <!---------- Scissors button ---------->
+      <button onclick="
       playGame('scissors');
     " class="move-button">
-    <img src="./assets/scissors.png" class="move-icon">
-  </button>
-  <!---------------------- Paragraph ---------------------->
-  <p class="js-result result"></p>
-  <p class="js-moves"></p>
-  <p class="js-score score"></p>
+        <img src="./assets/scissors.png" class="move-icon">
+      </button>
+    </div>
 
-  <!---------------------- Reset button ---------------------->
-  <button onclick="
+    <div class="results-container">
+      <p class="js-result result"></p>
+      <p class="js-moves"></p>
+      <p class="js-score score"></p>
+    </div>
+
+    <div class="play-reset-buttons">
+      <!---------- Reset button ---------->
+      <button onclick="
       score.wins = 0;
       score.loses = 0;
       score.ties = 0;
@@ -43,12 +50,16 @@
       updateScoreElement();
     " class="reset-button">Reset Score</button>
 
-  <!---------------------- Auto button ---------------------->
-  <button class="auto-play-button" onclick="
+      <!---------- Auto button ---------->
+      <button class="auto-play-button" onclick="
     autoPlay();
   ">Auto Play</button>
 
-  <!------------------------- Script tag ------------------------->
+    </div>
+
+  </div>
+
+  <!------------------------- Script tag ---------->
   <script src="script.js"></script>
 </body>
 
